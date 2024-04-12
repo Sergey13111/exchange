@@ -30,6 +30,7 @@ const config: Config = {
         light: '#F6F7FF',
         blue: '#2C36F2',
         grey: '#E0E1EA',
+        greySecondary: '#C1C2CA',
         hover: '#aacbed',
       },
       container: {
