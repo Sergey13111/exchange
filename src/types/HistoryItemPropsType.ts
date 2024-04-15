@@ -1,9 +1,5 @@
+import { FormDataType } from './FormDataType';
+
 export type HistoryItemPropsType = {
-  item: {
-    date: string;
-    amount: string;
-    amountConverted: string;
-    currencyFrom: string;
-    currencyTo: string;
-  };
+  historyItem: FormDataType;
 };

@@ -1,3 +1,4 @@
+'use client';
 
 type ButtonType = {
   children: React.ReactNode;
@@ -10,7 +11,13 @@ const PrimaryButton: React.FC<ButtonType> = ({ children, bg, width, onClick }) =
   const buttonClass = `${bg} ${width}  h-14  p-3  rounded shadow-lg`;
   const hoverClass = 'hover:bg-[#222bbb]';
 
-  return <button className={`${buttonClass} ${hoverClass}`}>{children}</button>;
+  return (
+    <button
+      className={`${buttonClass} ${hoverClass}`}
+      onClick={onClick}>
+      {children}
+    </button>
+  );
 };
 
 export default PrimaryButton;
